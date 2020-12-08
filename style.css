@@ -1,0 +1,25 @@
+form{
+    width: 300px;
+}
+input{
+    width: 100%;
+}
+.domainsPlace{
+    min-width: 300px;
+    min-height: 100px;
+    border: 1px solid #ced4da;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+p{
+    margin: 5px;
+    font-size: 20px;
+}
+.copy{
+    position: absolute;
+    top:5px;
+    right: 5px;
+}
