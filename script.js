@@ -25,13 +25,12 @@ function domainCheck(domain){
     fetch(url)
     .then(res=>res.json())
     .then(data=>{
-        console.log(data.data[domain].available_reason)
         if(!data.data[domain].available_reason){
             domains.push(domain)
             let domainsPlace = document.querySelector('.domainsPlace')
-            let p = document.createElement('p')
-            p.innerHTML = domain
-            domainsPlace.append(p)
+            let span = document.createElement('span')
+            span.innerHTML = domain
+            domainsPlace.append(span)
         } else {
             randomWord(wordCount)
         }
